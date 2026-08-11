@@ -1,17 +1,42 @@
-# weather_app
+# Weather App
 
-A new Flutter project.
+A Flutter weather application that allows users to search for a city and view its current weather conditions and forecast.
 
-## Getting Started
+## Purpose
 
-This project is a starting point for a Flutter application.
+The purpose of this project is to learn and demonstrate mobile application development using Flutter and Dart while building a practical weather application.
 
-A few resources to get you started if this is your first Flutter project:
+## Planned Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Search for a city
+- Display the current temperature
+- Display weather conditions
+- Display weather forecast
+- Show weather icons
+- Handle loading states
+- Handle errors when weather data cannot be loaded
+- Refresh weather information
+- Responsive mobile interface
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies
+
+- Flutter
+- Dart
+- Android
+- Git
+- GitHub
+- Weather API
+- Automated testing
+
+## Project Structure
+
+```text
+lib/
+├── main.dart
+├── models/
+├── screens/
+├── services/
+├── widgets/
+└── utils/
+
+test/
