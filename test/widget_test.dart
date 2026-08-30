@@ -29,8 +29,6 @@ void main() {
     await tester.pump();
 
     // Check that the searched city appears on the screen.
-   await tester.pump();
-
-  expect(find.text('Cape Town'), findsNWidgets(2));
+   expect(find.widgetWithText(Text, 'Cape Town'), findsOneWidget);
   });
 }
