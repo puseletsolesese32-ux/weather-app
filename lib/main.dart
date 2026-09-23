@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'models/weather_model.dart';
 import 'services/weather_service.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+Future<void> main() async {
+  await dotenv.load(fileName: ".env");
   runApp(const WeatherApp());
 }
 
@@ -31,10 +33,10 @@ class WeatherHomeScreen extends StatefulWidget {
 }
 
 class _WeatherHomeScreenState extends State<WeatherHomeScreen> {
-  // Replace with my OpenWeatherMap API Key
-  final WeatherService _weatherService = WeatherService(
-    apiKey: 'f5b6ef2b49dd208dbe7e6f531f3f8157',
-  );
+ 
+final WeatherService _weatherService = WeatherService(
+  apiKey: dotenv.env['OPENWEATHER_API_KEY'] ?? '',
+);
 
   final TextEditingController _cityController = TextEditingController();
 
