@@ -17,7 +17,7 @@ void main() {
       expect(weather.cityName, 'Johannesburg');
       expect(weather.temperature, 22.5);
       expect(weather.description, 'clear sky');
-      expect(weather.icon, '01d');
+      expect(weather.iconCode, '01d');
     });
   });
 }
